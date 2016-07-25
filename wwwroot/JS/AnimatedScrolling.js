@@ -11,7 +11,7 @@ function scroll() {
         if (target.length) {
             $('html, body')
                 .animate({
-                    scrollTop: target.offset().top
+                    scrollTop: target.offset().top - 70
                 }, 1000);
             $('html, body').clearQueue();
             $('html, body, .full-width-tinted, h1, p').click(function () {
