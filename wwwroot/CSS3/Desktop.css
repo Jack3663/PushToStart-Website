@@ -271,3 +271,11 @@ span {
 .single-item {
 
 }
+
+.mobile-gallery {
+    display: none;
+}
+
+#mobileInformation {
+    display: none;
+}
