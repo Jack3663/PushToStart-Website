@@ -3,9 +3,8 @@
 {
     position: relative;
     
-    width:100%
+    width: 100vw !important;
 
-    display: block;
     box-sizing: border-box;
 
     -webkit-user-select: none;
@@ -90,7 +89,6 @@
 {
     display: none;
     float: left;
-
     height: 100%;
     min-height: 1px;
 }
