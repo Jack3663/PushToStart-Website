@@ -5,7 +5,7 @@
     display: none;
 }
 
-#mainTitle {
+#mainTitle { /*Navigation Bar + Background Space*/
     display: none;
 }
 
@@ -13,14 +13,14 @@
     list-style: none;
 }
 
-#topNavigation {
+#topNavigation { /*Naviagtion Bar*/
     margin: 0 auto;
     position: relative;
     top: -76px;
     left: 14px;
 }
 
-    #topNavigation li {
+    #topNavigation li { /*Navigation Bar Single Entry*/
         display: table-cell;
         vertical-align: bottom;
         float: left;
@@ -35,7 +35,7 @@ html {
     height: 0%;
 }
 
-#topNavigation li a {
+#topNavigation li a { /*Navigation Bar Single Entry Text*/
     display: table-cell;
     text-decoration: none;
     color: #000;
@@ -49,15 +49,15 @@ html {
     vertical-align: middle;
 }
 
-#topNavigation li :hover {
+#topNavigation li :hover { /*Naviagtion Bar Single Entry During Hover*/
     background-color: lightblue;
 }
 
-#topNavigation li a:hover {
+#topNavigation li a:hover { /*Naviagtion Bar Single Entry Text During Hover*/
     color: #ffffff;
 }
 
-body {
+body { /*General Page Stuff*/
     margin: 0 auto;
     width: 100%;
     alignment-adjust: central;
@@ -159,7 +159,7 @@ span {
     letter-spacing: 0.25rem;
 }
 
-.full-width-tinted {
+.full-width-tinted { /*Panel Stuff*/
     position: relative;
     margin: 0 -10rem;
     padding: .25rem 10rem;
@@ -174,15 +174,15 @@ span {
     display: block;
 }
 
-.header {
+.header { /*Header Display*/
     display: block;
 }
 
-:target {
+:target { /*Javascript Scolling Animation Offset*/
     padding-top: 40px;
 }
 
-.slick-slider
+.slick-slider /*Gallery CSS Overwrite*/
 {
     position: relative;
     height: 100vh;
@@ -201,7 +201,7 @@ span {
     -webkit-tap-highlight-color: transparent;
 }
 
-.slick-prev 
+.slick-prev /*Gallery Arrow Stuff*/
 {
     font-size: 0;
     line-height: 0;
@@ -231,7 +231,7 @@ span {
     z-index: 4;
 }
 
-.slick-next
+.slick-next /*Gallery Arrow Stuff*/
 {
     font-size: 0;
     line-height: 0;
@@ -260,10 +260,10 @@ span {
 
     z-index: 4;
 }
-.single-item {
+.single-item { /*Desktop Gallery Stuff*/
     display: none;
 }
-#dropShadow {
+#dropShadow { /*Drop Shadow Stuff*/
     display: none;
 }
 #mobileInformation {
