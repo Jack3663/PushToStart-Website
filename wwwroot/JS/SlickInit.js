@@ -3,8 +3,8 @@ $(document).ready(function () {
     $('.single-item').slick({
         accessibility: true, //Allows For Tabbing And Arrow Control
         adaptiveHeight: true, //Adapts The Viewport of the gallery to fit the image
-        autoplay: false, //Plays and scrolls slide automatically on launch of website
-        autoplaySpeed: 3000, //Speed of auto scroll
+        autoplay: true, //Plays and scrolls slide automatically on launch of website
+        autoplaySpeed: 5000, //Speed of auto scroll
         arrows: false,//Display arrows
         centerMode: false,//Focus one image and show a bit of the other images
         dots: true,//Display dots
@@ -21,7 +21,7 @@ $(document).ready(function () {
         slidesPerRow: 1,//How many slides per row
         slidesToShow: 1,//How many slides to show regardless of rows
         slidesToScroll: 1,//How many slides to scroll at once
-        speed: 300,//Speed of fading
+        speed: 600,//Speed of fading/sliding
         swipe: true,//Enable Swiping
         swipeToSlide: false,//Enable Swiping Directly to slides
         touchMove: true,//Enable slide motion with touch
