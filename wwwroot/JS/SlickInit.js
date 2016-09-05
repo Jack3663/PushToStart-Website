@@ -14,8 +14,8 @@ $(document).ready(function () {
         infinite: true,//Infinite or nah
         initialSlide: 0,//Which slide to start on
         mobileFirst: false,//Loads using a mobile first configuration
-        pauseOnFocus: true,//Pauses autoplay on focus
-        pauseOnHover: true,//Pauses autoplay on hover
+        pauseOnFocus: false,//Pauses autoplay on focus
+        pauseOnHover: false,//Pauses autoplay on hover
         pauseOnDotsHover: false,//Pauses autoplay while hover on dots
         rows: 1,//How many rows of slides
         slidesPerRow: 1,//How many slides per row
