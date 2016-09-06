@@ -165,8 +165,9 @@ body { /*General Page Stuff*/
 span {
     display: inline-block;
     vertical-align: middle;
-    line-height: 55px;
+    line-height: 1.8rem;
     letter-spacing: 0.25rem;
+    font-size: 1.2rem;
 }
 
 .full-width-tinted { /*Panel Stuff*/
@@ -289,8 +290,18 @@ span {
 #footer-main {
     width: 100%;
     height: 250px;
+    border-top: 1px solid black;
+    background: #333333;
 }
 
 .blockedText {
     display: block;
+}
+
+aside {
+    background: #333333;
+}
+
+#socialMediaStuff {
+    display: inline-block;
 }
