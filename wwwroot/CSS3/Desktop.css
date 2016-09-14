@@ -10,11 +10,36 @@
     height: 50px;
     display: block;
     margin: 0 auto;
-    background: #444444;
+    background: #4f4e4e;
     border-bottom: 1px solid black;
     position: fixed;
     z-index: 3;
     left: 0px;
+}
+
+#logoWords {
+    font-size: 1.2rem;
+    margin-top: -30px;
+    color: white;
+}
+
+#logoContainer {
+    width: 60vw; 
+    height: 100%;
+    display:inline-block; 
+    margin-left: 15px;
+}
+
+#logoPicture {
+    height: 40px;
+    padding-top: 6px;
+    display: inline-block;
+}
+
+#logoPicture2 {
+    height: 40px;
+    padding-top: 6px;
+    display: none;
 }
 
 #topNavigation, ul#my_menu li {
@@ -163,11 +188,11 @@ body { /*General Page Stuff*/
 }
 
 span {
-    display: inline-block;
-    vertical-align: middle;
-    line-height: 1.8rem;
-    letter-spacing: 0.25rem;
-    font-size: 1.2rem;
+	display: inline-block;
+	vertical-align: middle;
+	line-height: 1.8rem;
+	letter-spacing: 0.001em;
+	font-size: 1.2rem;
 }
 
 .full-width-tinted { /*Panel Stuff*/
@@ -304,4 +329,8 @@ aside {
 
 #socialMediaStuff {
     display: inline-block;
+}
+
+.MobileCharacterSections {
+    display: none;
 }
