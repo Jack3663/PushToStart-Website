@@ -18,6 +18,9 @@
     <title>SilhouetteWolf</title>
 </head>
 <body>
+    <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+    <label for="nav-trigger" style="font-size: 22px; text-align: center;">☰</label>
+
     <header id="mainTitle" style="top: 0px;">
         <!--Navigation Bar Starts Here-->
 
@@ -26,43 +29,33 @@
             <img id="logoPicture2" src="../IMG/SilhouetteWolfBanner.jpg" />
         </div>
 
-        <!--<div id="socialMediaStuff" style="display: inline-block; float: right; margin-top: -12px; margin-right: 20px; width: 340px; height: 50px;">
-            <a href="http://www.facebook.com" style="padding: 12px; position: relative; top:50%; padding-top: 75px; margin-left: 10px;">
-                <img src="../IMG/facebookIcon.png" style="width: 75px; height: 75px;" />
-            </a>
-            <a href="http://www.linkedIn.com" style="padding: 12px; position: relative; top:50%; padding-top: 75px; margin-left: 10px;">
-                <img src="../IMG/linkedInIcon.png" style="width: 75px; height: 75px;" />
-            </a>
-            <a href="http://www.twitter.com" style="padding: 12px; position: relative; top:50%; padding-top: 75px; margin-left: 10px;">
-                <img src="../IMG/twitterIcon.png" style="width:75px; height: 75px;" />
-            </a>
-        </div>-->
-
-        <nav id="topNavigation">
-            <ul></ul>
-        </nav>
     </header> <!--Navigation Bar Ends Here-->
     <img id="dropShadow" src="../IMG/DropShadow.png" style="width: 100%; height: 32px; padding-top: 30px; z-index: 2; position: fixed; left: 0px; opacity: 0.50; top: 0px;" /> <!--Drop shadows for days-->
     <h1 name="TopOfThePage"></h1><h1 name="TopOfThePage"></h1> <!--A empty header for use in the Javascript Scrolling Animation-->
-    <div class="single-item" style="padding-top: 10px; padding-bottom: 30px;">
-        <!--Desktop Gallery Starts Here-->
-        <div>
-            <img src="../IMG/Front_Page_Richards_Art04.jpg" style="height: 100%;" />
-        </div>
-        <div>
-            <img src="../IMG/Front_Page_Richards_Art01.jpg" style="height:100%" />
-        </div>
-        <div>
-            <img src="../IMG/Front_Page_Richards_Art02.jpg" style="height: 100%;" />
-        </div>
-        <div>
-            <img src="../IMG/Front_Page_Richards_Art03.jpg" style="height: 100%;" />
-        </div>
-        <div>
-            <img src="../IMG/Front_Page_Richards_Art05.jpg" style="height: 100%;" />
-        </div>
-    </div> <!--Desktop Gallery Ends Here-->
+    <ul class="navigation">
+        <li class="first-nav-item"><a href="#">FaceBook</a></li>
+        <li class="nav-item"><a href="#">Twitter</a></li>
+        <li class="nav-item"><a href="#">LinkedIn</a></li>
+    </ul>
     <div class="container">
+        <div class="single-item" style="padding-top: 10px; padding-bottom: 30px;">
+            <!--Desktop Gallery Starts Here-->
+            <div>
+                <img src="../IMG/Front_Page_Richards_Art04.jpg" style="height: 100%;" />
+            </div>
+            <div>
+                <img src="../IMG/Front_Page_Richards_Art01.jpg" style="height:100%" />
+            </div>
+            <div>
+                <img src="../IMG/Front_Page_Richards_Art02.jpg" style="height: 100%;" />
+            </div>
+            <div>
+                <img src="../IMG/Front_Page_Richards_Art03.jpg" style="height: 100%;" />
+            </div>
+            <div>
+                <img src="../IMG/Front_Page_Richards_Art05.jpg" style="height: 100%;" />
+            </div>
+        </div>
         <!--Main Container Starts Here-->
         <section>
             <!--Empty Section to contain the panels-->
@@ -117,7 +110,7 @@
 
             <div class="MobileCharacterSections" style="width: 100vw; height: 100%; margin-bottom: 60px;">
                 <div style="vertical-align: middle;">
-                    <img name="system" src="../IMG/The_Engineer.png" style="width: 45%; height: 45%; margin-left: auto; margin-right: auto; display: block;"/>
+                    <img name="system" src="../IMG/The_Engineer.png" style="width: 45%; height: 45%; margin-left: auto; margin-right: auto; display: block;" />
                     <span style="color: white; margin-left: auto; margin-right: auto; text-align: center; max-width: 80vw; display: block;"> The setting: Earth's Nearest neighbouring star system, it contains a barely habitable world, Proxima Centauri B. This is the Mimics home world, tidally locked and orbiting close to its parent star. One side of the planet is always night and other always day. A band of life exists where light meet darks around the planets edge, due the unusually strong but erratic magnetic field of the planet, life here has developed unlike anything known to man. This makes it the perfect planet for Earth's first deep space research station.</span>
                 </div>
             </div>
@@ -131,7 +124,7 @@
 
             <div class="MobileCharacterSections" style="width: 100vw; height: 100%; margin-bottom: 60px;">
                 <div style="vertical-align: middle;">
-                    <img name="base" src="../IMG/The_Engineer.png" style="width: 45%; height: 45%; margin-left: auto; margin-right: auto; display: block;"/>
+                    <img name="base" src="../IMG/The_Engineer.png" style="width: 45%; height: 45%; margin-left: auto; margin-right: auto; display: block;" />
                     <span style="color: white; margin-left: auto; margin-right: auto; text-align: center; max-width: 80vw; display: block;"> The science base: Constructed over many years by unmanned landers, the science base is finally ready to be inhabited by humans. A long-term study missions will see experts in 6 fields study the planet in every detail, especially the unusual life forms on the surface. The mission includes the capture and close-up study of the indigenous creatures, a directive that some of the crew have extreme concern about.</span>
                 </div>
             </div>

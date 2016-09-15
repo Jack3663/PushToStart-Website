@@ -18,6 +18,9 @@
     <title>SilhouetteWolf</title>
 </head>
 <body>
+    <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+    <label for="nav-trigger" style="font-size: 22px; text-align: center;">☰</label>
+
     <header id="mainTitle" style="top: 0px;">
         <!--Navigation Bar Starts Here-->
 
@@ -26,43 +29,33 @@
             <img id="logoPicture2" src="../IMG/SilhouetteWolfBanner.jpg" />
         </div>
 
-        <!--<div id="socialMediaStuff" style="display: inline-block; float: right; margin-top: -12px; margin-right: 20px; width: 340px; height: 50px;">
-            <a href="http://www.facebook.com" style="padding: 12px; position: relative; top:50%; padding-top: 75px; margin-left: 10px;">
-                <img src="../IMG/facebookIcon.png" style="width: 75px; height: 75px;" />
-            </a>
-            <a href="http://www.linkedIn.com" style="padding: 12px; position: relative; top:50%; padding-top: 75px; margin-left: 10px;">
-                <img src="../IMG/linkedInIcon.png" style="width: 75px; height: 75px;" />
-            </a>
-            <a href="http://www.twitter.com" style="padding: 12px; position: relative; top:50%; padding-top: 75px; margin-left: 10px;">
-                <img src="../IMG/twitterIcon.png" style="width:75px; height: 75px;" />
-            </a>
-        </div>-->
-
-        <nav id="topNavigation">
-            <ul></ul>
-        </nav>
     </header> <!--Navigation Bar Ends Here-->
     <img id="dropShadow" src="../IMG/DropShadow.png" style="width: 100%; height: 32px; padding-top: 30px; z-index: 2; position: fixed; left: 0px; opacity: 0.50; top: 0px;" /> <!--Drop shadows for days-->
     <h1 name="TopOfThePage"></h1><h1 name="TopOfThePage"></h1> <!--A empty header for use in the Javascript Scrolling Animation-->
-    <div class="single-item" style="padding-top: 10px; padding-bottom: 30px;">
-        <!--Desktop Gallery Starts Here-->
-        <div>
-            <img src="../IMG/Front_Page_Richards_Art04.jpg" style="height: 100%;" />
-        </div>
-        <div>
-            <img src="../IMG/Front_Page_Richards_Art01.jpg" style="height:100%" />
-        </div>
-        <div>
-            <img src="../IMG/Front_Page_Richards_Art02.jpg" style="height: 100%;" />
-        </div>
-        <div>
-            <img src="../IMG/Front_Page_Richards_Art03.jpg" style="height: 100%;" />
-        </div>
-        <div>
-            <img src="../IMG/Front_Page_Richards_Art05.jpg" style="height: 100%;" />
-        </div>
-    </div> <!--Desktop Gallery Ends Here-->
+    <ul class="navigation">
+        <li class="first-nav-item"><a href="#">FaceBook</a></li>
+        <li class="nav-item"><a href="#">Twitter</a></li>
+        <li class="nav-item"><a href="#">LinkedIn</a></li>
+    </ul>
     <div class="container">
+        <div class="single-item" style="padding-top: 10px; padding-bottom: 30px;">
+            <!--Desktop Gallery Starts Here-->
+            <div>
+                <img src="../IMG/Front_Page_Richards_Art04.jpg" style="height: 100%;" />
+            </div>
+            <div>
+                <img src="../IMG/Front_Page_Richards_Art01.jpg" style="height:100%" />
+            </div>
+            <div>
+                <img src="../IMG/Front_Page_Richards_Art02.jpg" style="height: 100%;" />
+            </div>
+            <div>
+                <img src="../IMG/Front_Page_Richards_Art03.jpg" style="height: 100%;" />
+            </div>
+            <div>
+                <img src="../IMG/Front_Page_Richards_Art05.jpg" style="height: 100%;" />
+            </div>
+        </div>
         <!--Main Container Starts Here-->
         <section>
             <!--Empty Section to contain the panels-->
