@@ -42,6 +42,38 @@
     display: none;
 }
 
+.first-nav-item {
+    display: none;
+}
+
+.nav-item {
+    display: none;
+}
+
+.nav-trigger {
+	display: none;
+}
+
+label[for="nav-trigger"] {
+	display: none;
+}
+
+.nav-trigger:checked + label {
+	display: none;
+}
+
+.nav-trigger:checked ~ ul.navigation {
+    display: none;
+}
+
+.nav-trigger:checked ~ .container {
+    display: none;
+}
+
+.nav-trigger + label, .container {
+   
+}
+
 #topNavigation, ul#my_menu li {
     list-style: none;
 }
@@ -329,6 +361,7 @@ aside {
 
 #socialMediaStuff {
     display: inline-block;
+    height: 170px !important;
 }
 
 .MobileCharacterSections {
