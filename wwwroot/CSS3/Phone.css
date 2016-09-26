@@ -304,6 +304,16 @@ span {
     -webkit-tap-highlight-color: transparent;
 }
 
+.slick-list
+{
+    position: relative;
+    height: 360px !important;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
 .slick-prev /*Gallery Arrow Stuff*/
 {
     font-size: 0;
