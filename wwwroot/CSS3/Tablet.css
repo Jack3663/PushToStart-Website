@@ -24,19 +24,19 @@
 }
 
 #logoContainer {
-    width: 60vw; 
+    width: 60vw;
     height: 100%;
-    display:inline-block; 
+    display:inline-block;
     margin-left: 15px;
 }
 
-#logoPicture {
+#Silhouette_Logo {
     height: 40px;
     padding-top: 6px;
     display: inline-block;
 }
 
-#logoPicture2 {
+#Wolf_Logo {
     height: 40px;
     padding-top: 6px;
     display: none;
@@ -71,7 +71,7 @@ label[for="nav-trigger"] {
 }
 
 .nav-trigger + label, .container {
-   
+
 }
 
 #topNavigation, ul#my_menu li {
@@ -129,7 +129,7 @@ body { /*General Page Stuff*/
     margin: 0 auto;
     width: 100%;
     alignment-adjust: central;
-    height: 0%;
+    height: 100%;
     /*! padding-top: 150px; */
     background: #444444;
     -webkit-background-size: cover;
@@ -227,7 +227,7 @@ span {
 	font-size: 1.2rem;
 }
 
-.full-width-tinted { /*Panel Stuff*/
+.Panel { /*Panel Stuff*/
     position: relative;
     margin: 0 3rem;
     padding: 0rem 0rem;
@@ -277,8 +277,8 @@ span {
 
     display: none;
 
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70%;
     padding: 0;
 
     padding-right: 25px;
@@ -307,8 +307,8 @@ span {
 
     display: none;
 
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70%;
     padding: 0;
 
     padding-left: 25px;
@@ -326,8 +326,9 @@ span {
 
     z-index: 4;
 }
-.single-item { /*Desktop Gallery Stuff*/
-    
+
+.Image_Gallery { /*Desktop Gallery Stuff*/
+
 }
 
 .tablet-gallery { /*Tablet Gallery Stuff*/
@@ -364,6 +365,217 @@ aside {
     height: 170px !important;
 }
 
-.MobileCharacterSections {
+.Mobile_Explinations {
     display: none;
+}
+
+#Jacks_Description {
+  position: absolute;
+  top: 143px;
+  left: 329px;
+  width: 100%;
+  max-width: 250px;
+}
+
+#Jacks_Description span {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1.3rem;
+  letter-spacing: 0.001em;
+  font-size: 0.85rem;
+  font-weight: lighter;
+  color: #e6e6e6;
+}
+
+#Charlies_Description {
+  position: absolute;
+  top: 143px;
+  left: 614px;
+  width: 100%;
+  max-width: 250px;
+}
+
+#Charlies_Description span {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1.3rem;
+  letter-spacing: 0.001em;
+  font-size: 0.85rem;
+  font-weight: lighter;
+  color: #e6e6e6;
+}
+
+#Dans_Description {
+  position: absolute;
+  top: 143px;
+  left: 30px;
+  width: 100%;
+  max-width: 250px;
+}
+
+#Dans_Description span {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1.3rem;
+  letter-spacing: 0.001em;
+  font-size: 0.85rem;
+  font-weight: lighter;
+  color: #e6e6e6;
+}
+
+#Richards_Description {
+  position: absolute;
+  top: 143px;
+  left: 914px;
+  width: 100%;
+  max-width: 290px;
+}
+
+#Richards_Description span {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1.3rem;
+  letter-spacing: 0.001em;
+  font-size: 0.85rem;
+  font-weight: lighter;
+  color: #e6e6e6;
+}
+
+#dropShadow {
+  margin-top: 5 0px;
+}
+
+.Test_Explinations {
+  width: 100vw;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#Text_Explinations_Line {
+  border-right: 4px solid #333333;
+  z-index: 1;
+  width: 1px;
+  height: 35vw;
+  position: absolute;
+  left: 49%;
+}
+
+#Character_Explination_Title {
+  color: white;
+  background-color: #333333;
+  height: 49px;
+  font-family: Ebrima;
+  font-size: 3.5vw;
+  padding-top: 15px;
+  padding-left: 15px;
+  text-align: center;
+}
+
+#Test_Explination_Title {
+  color: white;
+  background-color: #333333;
+  height: 64px;
+  font-family: Ebrima;
+  font-size: 40px;
+}
+
+#Left_Test_Explination_Title {
+  color: white;
+  background-color: #333333;
+  height: 64px;
+  font-family: Ebrima;
+  font-size: 40px;
+  padding-left: 20px;
+}
+
+#Right_Test_Explination_Title {
+  color: white;
+  background-color: #333333;
+  height: 64px;
+  font-family: Ebrima;
+  font-size: 40px;
+  text-align: right;
+  padding-right: 20px;
+}
+
+#Character_Explination {
+  width: 50%;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+#span1 {
+  color: white;
+  vertical-align: top;
+  text-align:right;
+  max-width: 68%;
+  margin-top: 7%;
+  display: inline-block;
+  float: none;
+  min-width:30%;
+  margin-left: 6%;
+  font-size: 1.5vw;
+  line-height: 2vw;
+}
+
+#span2 {
+color: white;
+display:inline-block;
+max-width: 68%;
+margin-left: 10px;
+vertical-align: middle;
+text-align:left;
+margin-top:-22%;
+font-size: 1.5vw;
+line-height: 2vw;
+}
+
+#Left_Explination {
+  width: 50%;
+  display: inline-block;
+  background-color: #5C5C5C;
+}
+
+#Right_Explination {
+  width: 50%;
+  display: inline-block;
+  background-color: #5C5C5C;
+}
+
+#Test_Explination_Text {
+  max-width: 46%;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  color: #FCFCFC;
+  font-size: 1.2vw;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  line-height: 20px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+#Left_Test_Explination_Text {
+  max-width: 46%;
+  display: inline-block;
+  vertical-align: top;
+  text-align: right;
+  margin-left: 10px;
+  margin-top: 65px;
+  color: #FCFCFC;
+  font-size: 1.2vw;
+}
+
+#Right_Test_Explination_Text {
+  max-width: 50%;
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+  margin-left: 20px;
+  margin-top: 65px;
+  color: #FCFCFC;
+  font-size: 1.2vw;
 }

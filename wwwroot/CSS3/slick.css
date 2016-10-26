@@ -2,9 +2,8 @@
 .slick-slider
 {
     position: relative;
-    
-    width: 100vw !important;
 
+    width: 100vw !important;
     box-sizing: border-box;
 
     -webkit-user-select: none;
@@ -64,8 +63,8 @@
     top: 0;
     left: 0;
     opacity: 1;
-    height: calc(100vh - 31px);
     display: block;
+    margin: 0 auto;
 }
 
 .slick-track:before,
@@ -91,6 +90,8 @@
     height: 100%;
     min-height: 1px;
     text-align: center;
+    width: 100vw !important;
+    margin-top: 20px;
 }
 .slick-slide::before{
     display: inline-block;

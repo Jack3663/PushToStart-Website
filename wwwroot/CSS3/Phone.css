@@ -15,7 +15,7 @@
 #mainTitle { /*Navigation Bar + Background Space*/
     float: left;
     width: 100%;
-    height: 75px;
+    height: 150px;
     display: block;
     margin: 0 auto;
     background: #4f4e4e;
@@ -39,35 +39,36 @@
     text-align: center;
 }
 
-#logoPicture {
+#Silhouette_Logo {
     height: 60px;
-    margin-top: 10px;
-    display: none;
-}
-
-#logoPicture2 {
-    height: 65px;
-    padding-top: 6px;
+    margin-top: 30px;
     display: inline-block;
+
 }
 
 .navigation {
     list-style: none;
     background: #111;
-    max-width: inherit;
-    height: 50px;
-    position: fixed;
+    width: inherit;
+    height: 40px;
+    position: fixed;;
     display: inline-block;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
     z-index: 1;
+    text-align: center;
+    padding-left: 0px;
+    margin-right: 40px;
+    display: none;
 }
 
 .first-nav-item {
-    margin-left: 50px;
     display: inline-block;
+    color: white;
+    margin-bottom: 40px;
+    margin-top: 24px;
 }
 
 .nav-item {
@@ -76,34 +77,49 @@
 }
 
 .nav-trigger {
-	position: absolute;
+	position: fixed;
 	clip: rect(0, 0, 0, 0);
 }
 
 label[for="nav-trigger"] {
 	position: fixed;
-	top: 15px;
-	left: 15px;
+	top: 30px;
+	left: 40px;
 	z-index: 13;
-	width: 30px;
-	height: 30px;
+	width: 70px;
+	height: 70px;
 	cursor: pointer;
-	content: "☰";
+	content: "";
+  background-image: url(../IMG/hamburger-menu-icon-black.png);
+  font-size: 40px;
 	background-size: contain;
+  display: block;
 }
 
 .nav-trigger:checked + label {
-	top: 115px;
+	  top: 200px;
     color: white;
+    display: block;
+    background-image: url(../IMG/hamburger-menu-icon-white.png);
 }
 
 .nav-trigger:checked ~ ul.navigation {
-    margin-top: 100px;
-    height: 100px;
+    margin-top: 150px;
+    height: 150px;
+    display: block;
 }
 
 .nav-trigger:checked ~ .container {
-    top: 150px;
+    top: 155px;
+    margin: 0 auto;
+    min-width: 100%;
+    min-height: 100%;
+    background-color: #4f4e4e;
+    position: relative;
+    display: block;
+    bottom: 100%;
+    left: 0;
+    z-index: 0;
 }
 
 .nav-trigger + label, .container {
@@ -134,10 +150,8 @@ label[for="nav-trigger"] {
 
 html {
     position: relative;
-    min-width: 1024px;
-    min-height: 768px;
-    height: 0%;
-    background-color: #111;
+    z-index: -1000;
+    background: #4f4e4e;
 }
 
 #topNavigation li a { /*Navigation Bar Single Entry Text*/
@@ -166,15 +180,14 @@ body { /*General Page Stuff*/
     margin: 0 auto;
     width: 100%;
     alignment-adjust: central;
-    height: 0%;
-    /*! padding-top: 150px; */
+    height: 100%;
     background: #444444;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     overflow-y: scroll;
-    overflow-x: hidden;
+    overflow-x: scr;
     font-family: "Raleway";
     user-select: all;
     -moz-user-select: all;
@@ -264,7 +277,7 @@ span {
 	font-size: 2.2rem;
 }
 
-.full-width-tinted { /*Panel Stuff*/
+.Panel { /*Panel Stuff*/
     position: relative;
     margin: 0 3rem;
     padding: 0rem 0rem;
@@ -289,6 +302,7 @@ span {
 {
     position: relative;
 
+    width: 100vw !important;
     display: block;
     box-sizing: border-box;
 
@@ -307,11 +321,22 @@ span {
 .slick-list
 {
     position: relative;
-    height: 360px !important;
+    height: 100% !important;
     display: block;
     overflow: hidden;
     margin: 0;
     padding: 0;
+}
+
+.slick-slide
+{
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+    text-align: center;
+    width: 100vw !important;
+    margin-top: 20px;
 }
 
 .slick-prev /*Gallery Arrow Stuff*/
@@ -322,13 +347,11 @@ span {
     position: absolute;
     top: 50%;
 
-    display: none;
+    display: none !important;
 
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70%;
     padding: 0;
-
-    padding-right: 25px;
 
     -webkit-transform: translate(0, -50%);
     -ms-transform: translate(0, -50%);
@@ -352,13 +375,11 @@ span {
     position: absolute;
     top: 50%;
 
-    display: none;
+    display: none !important;
 
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70%;
     padding: 0;
-
-    padding-left: 25px;
 
     -webkit-transform: translate(0, -50%);
     -ms-transform: translate(0, -50%);
@@ -373,8 +394,10 @@ span {
 
     z-index: 4;
 }
-.single-item { /*Desktop Gallery Stuff*/
-    
+
+.Image_Gallery { /*Desktop Gallery Stuff*/
+    display: block;
+    margin-top: 120px;
 }
 
 .tablet-gallery { /*Tablet Gallery Stuff*/
@@ -394,7 +417,7 @@ span {
 
 #footer-main {
     width: 100%;
-    height: 100px;
+    height: 30px;
     border-top: 1px solid black;
     background: #333333;
 }
@@ -407,7 +430,7 @@ aside {
     background: #333333;
 }
 
-#socialMediaStuff {
+#Silhouette_Wolf_Social_Media {
     display: none !important;
 }
 
@@ -415,14 +438,219 @@ aside {
     display: none;
 }
 
-.DesktopCharacterSections {
+.Desktop_Explinations {
     display: none;
 }
 
-.largeImage {
+.The_System {
     display: none;
 }
 
-.MobileCharacterSections {
+.Mobile_Explinations {
     display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#Jacks_Description {
+  position: absolute;
+  top: 143px;
+  left: 329px;
+  width: 100%;
+  max-width: 250px;
+}
+
+#Jacks_Description span {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1.3rem;
+  letter-spacing: 0.001em;
+  font-size: 0.85rem;
+  font-weight: lighter;
+  color: #e6e6e6;
+}
+
+#Charlies_Description {
+  position: absolute;
+  top: 143px;
+  left: 614px;
+  width: 100%;
+  max-width: 250px;
+}
+
+#Charlies_Description span {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1.3rem;
+  letter-spacing: 0.001em;
+  font-size: 0.85rem;
+  font-weight: lighter;
+  color: #e6e6e6;
+}
+
+#Dans_Description {
+  position: absolute;
+  top: 143px;
+  left: 30px;
+  width: 100%;
+  max-width: 250px;
+}
+
+#Dans_Description span {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1.3rem;
+  letter-spacing: 0.001em;
+  font-size: 0.85rem;
+  font-weight: lighter;
+  color: #e6e6e6;
+}
+
+#Richards_Description {
+  position: absolute;
+  top: 143px;
+  left: 914px;
+  width: 100%;
+  max-width: 290px;
+}
+
+#Richards_Description span {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1.3rem;
+  letter-spacing: 0.001em;
+  font-size: 0.85rem;
+  font-weight: lighter;
+  color: #e6e6e6;
+}
+
+.Silhouette_Wolf {
+  margin-top: 60px !important;
+  padding-top: 30px !important;
+}
+
+#The_Mimic_Title {
+  margin-left: auto; margin-right: auto; display: block; text-align: center;
+}
+#The_Mimic_Text {
+  text-align: center;
+}
+#Silhouette_Wolf_Title {
+  margin-left: auto; margin-right: auto; display: block; text-align: center;
+}
+
+#Silhouette_Wolf_Text {
+  text-align: center;
+}
+
+#mobilePictures {
+  box-shadow: 0px 15px 15px #333333;
+}
+
+#dropShadow {
+  margin-top: 150px;
+}
+
+.Test_Explinations {
+  display: none;
+}
+
+.Test_Explinations_Single {
+  display: none;
+}
+
+#Test_Explination_Title {
+  display: none;
+}
+
+#The_Mimic_Title {
+  color: white;
+  background-color: #333333;
+  height: 64px;
+  font-family: Ebrima;
+  font-size: 40px;
+}
+#The_Mimic {
+  max-width: 80%;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  color: #FCFCFC;
+  font-size: 1.2vw;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  line-height: 20px;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  letter-spacing: 3px;
+}
+
+.character {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title {
+  color: white;
+  background-color: #333333;
+  height: 64px;
+  font-family: Ebrima;
+  font-size: 40px;
+  padding-left: 20px;
+}
+
+.tARight {
+  text-align: right;
+}
+
+.halfBlock {
+  width: 50%;
+  display: inline-block;
+}
+
+.text {
+  max-width: 46%;
+  display: inline-block;
+  vertical-align: top;
+  text-align: right;
+  margin-top: 25px;
+  color: #FCFCFC;
+  font-size: 1.4vw;
+}
+
+.mimic{
+  max-width: 80%;
+  vertical-align: top;
+  text-align: center;
+  font-size: calc(0.6rem + 1.5vw);
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  padding-bottom: 30px;
+  letter-spacing: 3px;
+}
+
+.tALeft {
+  text-align: left;
+}
+
+.tACenter {
+  text-align: center;
+}
+
+.vAMiddle {
+  vertical-align: middle;
+}
+
+.split {
+  width: 100vw;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.dispNone {
+  display: none !important;
 }
