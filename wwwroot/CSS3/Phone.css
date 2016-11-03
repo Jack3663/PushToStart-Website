@@ -43,6 +43,9 @@
     height: 60px;
     margin-top: 30px;
     display: inline-block;
+    position: absolute;
+    top: -8px;
+    left: 150px;
 
 }
 
@@ -630,7 +633,13 @@ aside {
   display: block;
   padding-bottom: 30px;
   letter-spacing: 3px;
+  display: none;
 }
+
+.firstMobilePicture {
+  margin-top: 150px;
+}
+
 
 .tALeft {
   text-align: left;
@@ -653,4 +662,52 @@ aside {
 
 .dispNone {
   display: none !important;
+}
+
+.dropdownButton {
+  background-color: transparent;
+  color: white;
+  padding: 43px;
+  cursor: pointer;
+  border: none;
+}
+
+.dropdownButton:hover, .dropdownButton:focus {
+  background-color: #333333;
+}
+
+.dropdown {
+  position: absolute;
+  display: inline-block;
+  top: 21px;
+  left: 0px;
+}
+
+.dropdownContent {
+  display: none;
+  position: absolute;
+  background-color: transparent;
+  min-width: 103px;
+}
+
+.dropdownContent a {
+  color: white;
+  padding: 15px 15px;
+  display: block;
+}
+
+.dropdownContent a:hover {
+  background-color: #333333;
+}
+
+.show {
+  display: block;
+}
+
+.parallax-layer-back {
+  display: none;
+}
+
+#hamburgerMenuIcon {
+  width: 60px !important;
 }
