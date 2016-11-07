@@ -40,8 +40,8 @@
 }
 
 #Silhouette_Logo {
-    height: 60px;
-    margin-top: 30px;
+    height: 90px;
+    margin-top: 20px;
     display: inline-block;
     position: absolute;
     top: -8px;
@@ -437,6 +437,10 @@ aside {
     display: none !important;
 }
 
+.socialMediaStuff {
+    display: none;
+}
+
 #OurLogoDesktop {
     display: none;
 }
@@ -637,7 +641,7 @@ aside {
 }
 
 .firstMobilePicture {
-  margin-top: 150px;
+  margin-top: 6.8vw;
 }
 
 
@@ -667,9 +671,11 @@ aside {
 .dropdownButton {
   background-color: transparent;
   color: white;
-  padding: 43px;
+  padding: 73px;
   cursor: pointer;
   border: none;
+  background-image: url(../IMG/hamburger-menu-icon-white.png);
+  background-position: center;
 }
 
 .dropdownButton:hover, .dropdownButton:focus {
@@ -679,7 +685,8 @@ aside {
 .dropdown {
   position: absolute;
   display: inline-block;
-  top: 21px;
+  padding-top: -1px;
+  top: 2px;
   left: 0px;
 }
 
@@ -687,13 +694,15 @@ aside {
   display: none;
   position: absolute;
   background-color: transparent;
-  min-width: 103px;
+  min-width: 152px;
 }
 
 .dropdownContent a {
   color: white;
   padding: 15px 15px;
   display: block;
+  background-color: #4f4e4e;
+  border-bottom: 1px black solid;
 }
 
 .dropdownContent a:hover {
@@ -710,4 +719,40 @@ aside {
 
 #hamburgerMenuIcon {
   width: 60px !important;
+}
+
+.noShow {
+  display: none;
+}
+
+#link1 {
+  display: none;
+  position: absolute;
+  top: 10px;
+  left: calc(50vw - 153px);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#link2 {
+  display: none;
+  position: absolute;
+  top: 10px;
+  left: calc(50vw);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.links a {
+  text-align: center;
+  padding: 0px 15px;
+  color: #FCFCFC;
+  text-decoration: none;
+  font-size: 1.9vw;
+  font-family: Raleway;
+  font-weight: 300;
+}
+
+.links a:hover {
+  border-bottom: 3px solid #FCFCFC;
 }

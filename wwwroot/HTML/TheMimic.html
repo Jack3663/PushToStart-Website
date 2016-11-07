@@ -24,25 +24,32 @@
 </head>
 <body>
     <header id="mainTitle" style="top: -1px;">
+      <div class="dropdown">
+        <button onclick="menuOpenClose()" class="dropdownButton"></button>
+        <div id="myDropdown" class="dropdownContent">
+          <a href="#"> Home Page </a>
+          <a href="#"> The Mimic </a>
+          <a href="#"> Web Design </a>
+          <a href="#"> Facebook </a>
+          <a href="#"> LinkedIn </a>
+        </div>
+      </div>
         <!---Navigation Bar Starts Here--->
         <img id="Silhouette_Logo" src="../IMG/SillhouetteWolfLogo.png" style="padding-top: 15px;"/>
         <div class="links">
-          <a href="#">
-              Home
-          </a>
-          <a href="#">
+          <a id="link1" href="#">
               The Mimic
           </a>
-          <a href="#">
+          <a id="link2" href="#">
               Web Design
           </a>
         </div>
         <div class="socialMediaStuff">
           <a href="https://www.facebook.com/SilhouetteWolf/" target="_blank" style="padding: 12px; position: relative; top:30%; padding-top: 18px;">
-              <img id="fbSocial" src="../IMG/facebookIcon.png" style="width: 50px; height: 100%; " />
+              <img id="fbSocial" src="../IMG/facebookIcon.png" style="width: 35px; height: 70%; " />
           </a>
           <a href="https://www.linkedin.com/company/silhouette-wolf" target="_blank" style="padding: 12px; position: relative; top:30%; padding-top: 18px;">
-              <img id="liSocial" src="../IMG/linkedInIcon.png" style="width: 50px; height: 100%; " />
+              <img id="liSocial" src="../IMG/linkedInIcon.png" style="width: 35px; height: 35px; " />
           </a>
         </div>
     </header> <!--Navigation Bar Ends Here-->

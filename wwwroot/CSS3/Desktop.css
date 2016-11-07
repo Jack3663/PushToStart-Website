@@ -11,7 +11,7 @@
     height: 52px;
     display: block;
     margin: 0 auto;
-    background: #4f4e4e;
+    background:  rgba(79, 78, 78, 0.8);
     border-bottom: 1px solid black;
     position: fixed;
     z-index: 3;
@@ -129,7 +129,7 @@ html {
 }
 
 body { /*General Page Stuff*/
-    margin: 0 auto;
+    margin: -25px auto;
     width: 100%;
     alignment-adjust: central;
     height: 100%;
@@ -220,6 +220,7 @@ body { /*General Page Stuff*/
 #footer {
     float: left;
     width: 100%;
+    margin-bottom: -5px;
 }
 
 span {
@@ -368,8 +369,8 @@ aside {
 .socialMediaStuff {
     display: inline-block;
     position: absolute;
-    top: -14px;
-    left: 80vw;
+    top: -7px;
+    left: 88vw;
     height: 50px !important;
 }
 
@@ -621,7 +622,7 @@ line-height: 2vw;
 
 .parallax {
   perspective: 1px;
-  height: 100vh;
+  height: 101vh;
   overflow-x: hidden;
   overflow-y: auto;
 }
@@ -645,6 +646,8 @@ line-height: 2vw;
   font-size: 20px;
   cursor: pointer;
   border: none;
+  background-image: url(../IMG/hamburger-menu-icon-white.png);
+  background-position: center;
 }
 
 .dropdownButton:hover, .dropdownButton:focus {
@@ -653,7 +656,7 @@ line-height: 2vw;
 
 .dropdown {
   position: relative;
-  display: inline-block;
+  display: none;
 }
 
 .dropdownContent {
@@ -677,18 +680,31 @@ line-height: 2vw;
   display: block;
 }
 
-.links {
+.noShow {
+  display: none;
+}
+
+#link1 {
   display: inline-block;
   position: absolute;
   top: 10px;
-  left: calc(50vw - 15vw);
+  left: calc(50vw - 153px);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#link2 {
+  display: inline-block;
+  position: absolute;
+  top: 10px;
+  left: calc(50vw);
   margin-right: auto;
   margin-left: auto;
 }
 
 .links a {
   text-align: center;
-  padding: 5px 15px;
+  padding: 0px 15px;
   color: #FCFCFC;
   text-decoration: none;
   font-size: 1.9vw;
@@ -697,5 +713,5 @@ line-height: 2vw;
 }
 
 .links a:hover {
-  border-bottom: 3px solid pink;
+  border-bottom: 3px solid #FCFCFC;
 }
