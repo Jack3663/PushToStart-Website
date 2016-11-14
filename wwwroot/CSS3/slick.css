@@ -91,7 +91,6 @@
     min-height: 1px;
     text-align: center;
     width: 100vw !important;
-    margin-top: 20px;
 }
 .slick-slide::before{
     display: inline-block;

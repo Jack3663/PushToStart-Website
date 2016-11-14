@@ -1,21 +1,47 @@
 @charset "utf-8";
 
+@font-face {
+  font-family: raleway-light;
+  src: url(../FONTS/Raleway-Light.ttf);
+}
+
+@font-face {
+  font-family: raleway-lightitalic;
+  src: url(../FONTS/Raleway-LightItalic.ttf);
+}
+
+@font-face {
+  font-family: raleway-regular;
+  src: url(../FONTS/Raleway-Regular.ttf);
+}
+
+@font-face {
+  font-family: raleway-regularitalic;
+  src: url(../FONTS/Raleway-Italic.ttf);
+}
+
 .container {
     margin: auto;
     display: block;
 }
 
-#mainTitle { /*Navigation Bar + Background Space*/
+.mainTitle { /*Navigation Bar + Background Space*/
     float: left;
     width: 100%;
     height: 52px;
     display: block;
     margin: 0 auto;
-    background:  rgba(79, 78, 78, 0.8);
+    background:  rgb(79, 78, 78);
     border-bottom: 1px solid black;
     position: fixed;
-    z-index: 3;
+    z-index: 1;
     left: 0px;
+    opacity: 0.8;
+
+}
+
+.mainTitleChanged {
+  opacity: 1;
 }
 
 #logoWords {
@@ -130,7 +156,7 @@ html {
 
 body { /*General Page Stuff*/
     margin: -25px auto;
-    width: 100%;
+    width: 102%;
     alignment-adjust: central;
     height: 100%;
     /*! padding-top: 150px; */
@@ -141,7 +167,7 @@ body { /*General Page Stuff*/
     background-size: cover;
     overflow-y: hidden;
     overflow-x: hidden;
-    font-family: "Raleway";
+    font-family: raleway-regular;
     user-select: all;
     -moz-user-select: all;
     -webkit-user-select: text;
@@ -172,7 +198,7 @@ body { /*General Page Stuff*/
     color: inherit;
     font-family: inherit;
     font-size: inherit;
-    z-index: -2;
+    z-index: -5;
 }
 
 .leftsplit1 {
@@ -183,7 +209,7 @@ body { /*General Page Stuff*/
     position: relative;
     min-height: 1px;
     right: 0%;
-    z-index: 0;
+    z-index: -3;
 }
 
 .leftsplit2 {
@@ -192,7 +218,7 @@ body { /*General Page Stuff*/
     display: inline-block;
     position: relative;
     min-height: 1px;
-    z-index: 0;
+    z-index: -3;
 }
 
 .rightsplit1 {
@@ -203,7 +229,7 @@ body { /*General Page Stuff*/
     left: 4%;
     Right: 10%;
     min-height: 1px;
-    z-index: 0;
+    z-index: -3;
 }
 
 .rightsplit2 {
@@ -214,7 +240,7 @@ body { /*General Page Stuff*/
     position: relative;
     min-height: 1px;
     right: -13%;
-    z-index: 0;
+    z-index: -3;
 }
 
 #footer {
@@ -239,7 +265,7 @@ span {
     font-size: 1.125rem;
     float: left;
     background: rgba(255,255,255, 1);
-    z-index: 1;
+    z-index: -2;
     width: 90%;
     display: none;
 }
@@ -299,7 +325,7 @@ span {
     outline: none;
     background: transparent;
 
-    z-index: 1;
+    z-index: -2;
 }
 
 .slick-next /*Gallery Arrow Stuff*/
@@ -330,7 +356,7 @@ span {
     outline: none;
     background: transparent;
 
-    z-index: 0;
+    z-index: -3;
 }
 .Image_Gallery { /*Desktop Gallery Stuff*/
   margin-left: -5px;
@@ -457,11 +483,11 @@ aside {
 
 #line {
   border-right: 4px solid #333333;
-  z-index: 1;
+  z-index: 0;
   width: 1px;
   height: 31.7vw;
   position: absolute;
-  left: 49%;
+  left: 48%;
 }
 
 #Character_Explination_Title {
@@ -520,6 +546,8 @@ line-height: 2vw;
   font-family: Ebrima;
   font-size: 40px;
   padding-left: 20px;
+  padding-right: 20px;
+  margin-right
 }
 
 .tARight {
@@ -631,7 +659,6 @@ line-height: 2vw;
 }
 
 .parallax-layer-back {
-  height: 100vh;
   transform: translateZ(-1px) scale(2);
 }
 
@@ -702,13 +729,17 @@ line-height: 2vw;
   margin-left: auto;
 }
 
+.links {
+  height: 52px;
+}
+
 .links a {
   text-align: center;
   padding: 0px 15px;
   color: #FCFCFC;
   text-decoration: none;
   font-size: 1.9vw;
-  font-family: Raleway;
+  font-family: raleway-regular;
   font-weight: 300;
 }
 

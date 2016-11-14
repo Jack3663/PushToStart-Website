@@ -4,7 +4,6 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="google-site-verification" content="3-kP7p8ZGwsSEoNUL-Y5J35KcpschiZz6b0bHDLvgVo" />
     <meta name="description" content="Silhouette Wolf is a Teesside based games development company. We're currently working on our first title; The Mimic. We work hard on our games to try and produce the best content we can for our players. We have a diverse team with staff members ranging from all area's of games development. You can find more about the Silhouette Wolf team below. " />
-    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400" rel="stylesheet">
     <link  rel = "alternate" href = "http://silhouettewolf.co.uk/" hreflang = "en-us" />
     <link  rel = "alternate" href = "http://silhouettewolf.co.uk/" hreflang = "en-gb" />
     <!-- <link href="../CSS3/Tablet.css" rel="stylesheet" type="text/css" media="only screen and (min-width: 961px) and (max-width: 1023px)" />
@@ -20,10 +19,11 @@
     <script type="text/javascript" src="../JS/slick.min.js"></script>
     <script type="text/javascript" src="../JS/SlickInit.js"></script>
     <script type="text/javascript" src="../JS/dropdownJS.js"></script>
+    <script type="text/javascript" src="../JS/onScrollJS.js"></script>
     <title>Silhouette Wolf | The Mimic</title>
 </head>
 <body>
-    <header id="mainTitle" style="top: -1px;">
+    <header class="mainTitle" style="top: -1px;">
       <div class="dropdown">
         <button onclick="menuOpenClose()" class="dropdownButton"></button>
         <div id="myDropdown" class="dropdownContent">
@@ -35,12 +35,14 @@
         </div>
       </div>
         <!---Navigation Bar Starts Here--->
-        <img id="Silhouette_Logo" src="../IMG/SillhouetteWolfLogo.png" style="padding-top: 15px;"/>
+        <a href="../HTML/HomePage.html" >
+          <img id="Silhouette_Logo" src="../IMG/SillhouetteWolfLogo.png" style="padding-top: 15px;"/>
+        </a>
         <div class="links">
-          <a id="link1" href="#">
+          <a id="link1" href="../HTML/TheM">
               The Mimic
           </a>
-          <a id="link2" href="#">
+          <a id="link2" href="../HTML/WebDesign.html">
               Web Design
           </a>
         </div>
@@ -56,9 +58,9 @@
     <h1 name="TopOfThePage"></h1><h1 name="TopOfThePage"></h1> <!--A empty header for use in the Javascript Scrolling Animation-->
     <img id="dropShadow" src="../IMG/DropShadow.png" style="width: 100%; height: 32px; z-index: 10; position: fixed; left: 0px; opacity: 0.50; top: 0px;" /> <!--Drop shadows for days-->
     <div class="container"> <!--Main Container Starts Here-->
-      <div class="parallax">
+      <div class="parallax" onscroll="onScrollJS()">
         <div class="parallax-layer parallax-layer-back">
-          <div class="Image_Gallery" style="margin-top: -45px;">
+          <div class="Image_Gallery" style="margin-top: 0.5vw;">
               <!--Desktop Gallery Starts Here-->
               <div>
                   <img src="../IMG/ArtGallery_Image1.jpg" style="width: 100vw;" />
@@ -112,7 +114,7 @@
               The Mimics Habitat
             </div>
             <div class="The_System" style="text-align: center; margin-left: -5px;">
-                <img name="The_System" src="../IMG/LargeImageWhite.jpg" style="width: 100vw; height: 100%; display: block; margin-right: auto; margin-left: auto;" />
+                <img name="The_System" src="../IMG/LargeImageWhite.jpg" style="width: 101vw; height: 100%; display: block; margin-right: auto; margin-left: auto;" />
             </div>
               <div class="split dispNone" style="margin-left: -5px;">
                 <div class="halfBlock">
@@ -120,7 +122,7 @@
                     Proxima Centauri
                   </div>
                   <img src="../IMG/Silhouette-Wolf-Proxima-CentauriNonCard.png" alt="SystemImg" style="max-width: 23vw; display: inline-block; vertical-align: bottom;" />
-                  <div class="text" style="float: right; padding-left: 0px; margin-right: 35px;">
+                  <div class="text tARight" style="float: right; padding-left: 0px; margin-right: 35px;">
                     Earth's Nearest neighbouring star system, it contains a barely habitable world, Proxima Centauri b. This is the Mimics home world, tidally locked, one side of the planet is always night and the other always day. A band of life exists where light meet darks around the planets edge, life here has developed unlike anything known to man. This makes it the perfect planet for Earth's first deep space research station.
                   </div>
                 </div>
@@ -136,20 +138,32 @@
                 </div>
               </div>
 
-              <div class="character" style="width: 100vw; height: 100%;">
-                  <div class="character title vAMiddle tARight dispNone" style="width: calc(100vw - 37px); padding-right: 20px;"> The Mimic</div>
-                  <div id="Character_Explination" style="width: 100vw;">
-                    <div class="character text tARight vAMiddle dispNone" style="width: 100vw; margin-top: 6vw; text-align: right; max-width: 74%;"> The apex predator, a perfect hunter, the Mimic gets inside its prey’s head to make them hunt themselves down. The Mimic ‘mimics’ every movement and forms a bond between itself and its prey, if the Mimic dies so does its prey. There is no way to escape its constant presence, eventually you will make a wrong turn and the Mimic will be there.
-                  </div>
-                  <img class="dispNone" name="mimic" src="../IMG/TheMimicNonCard.png" style="width: 20%; height: 20%; margin-right: 4.7%; display: inline-block; float: right;" />
+              <div class="title dispNone" style="text-align: center;">
+                The Characters
               </div>
-
-              <div class="character" style="width: 100vw; height: 100%;">
-                  <div class="character title vAMiddle dispNone" style="width: 100vw; text-align: left;"> The Engineer</div>
-                  <div id="Character_Explination" style="width: 100vw;">
-                    <img class="dispNone" name="engineer" src="../IMG/The_EngineerNonCard.png" style="width: 20%; height: 20%; margin-left: 4.7%; display: inline-block; vertical-align: bottom;" />
-                    <div class="character text tALeft vAMiddle dispNone" style="margin-top: -21vw; max-width: 73%;"> Alone on an alien world, the Engineer is in a fight for survival, rescue is on the way but he can’t let his pursuer escape with him. Using the resources of the science base he must find a way to escape his Mimic but there are many puzzles and challenges to overcome on the way.</span>
+              <div class="The_System" style="text-align: center; margin-left: -5px;">
+                  <img name="The_System" src="../IMG/LargeImageWhite.jpg" style="width: 101vw; height: 100%; display: block; margin-right: auto; margin-left: auto;" />
+              </div>
+              <div class="split dispNone" style="margin-left: -5px;">
+                <div class="halfBlock">
+                  <div class="title">
+                    The Mimic
                   </div>
+                  <img src="../IMG/TheMimicNonCard.png" alt="SystemImg" style="max-width: 23vw; display: inline-block; vertical-align: bottom;" />
+                  <div class="text tARight" style="float: right; padding-left: 0px; margin-right: 35px;">
+                    The apex predator, a perfect hunter, the Mimic gets inside its prey’s head to make them hunt themselves down. The Mimic ‘mimics’ every movement and forms a bond between itself and its prey, if the Mimic dies so does its prey. There is no way to escape its constant presence, eventually you will make a wrong turn and the Mimic will be there.
+                  </div>
+                </div>
+                <div id="line"></div>
+                <div class="halfBlock">
+                  <div class="title tARight">
+                    The Engineer
+                  </div>
+                  <div class="text tALeft">
+                    Alone on an alien world, the Engineer is in a fight for survival, rescue is on the way but he can’t let his pursuer escape with him. Using the resources of the science base he must find a way to escape his Mimic but there are many puzzles and challenges to overcome on the way.
+                  </div>
+                  <img src="../IMG/The_EngineerNonCard.png" alt="BaseImg" style="max-width: 23vw; display: inline-block; float: right; vertical-align: bottom;" />
+                </div>
               </div>
 
               <div class="Mobile_Explinations" style="width: 100vw; height: 100%;">
