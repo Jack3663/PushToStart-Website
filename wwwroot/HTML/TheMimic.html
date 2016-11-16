@@ -23,7 +23,7 @@
     <title>Silhouette Wolf | The Mimic</title>
 </head>
 <body>
-    <header class="mainTitle" style="top: -1px;">
+    <header class="mainTitle" style="top: 0px;">
       <div class="dropdown">
         <button onclick="menuOpenClose()" class="dropdownButton"></button>
         <div id="myDropdown" class="dropdownContent">
@@ -39,7 +39,7 @@
           <img id="Silhouette_Logo" src="../IMG/SillhouetteWolfLogo.png" style="padding-top: 15px;"/>
         </a>
         <div class="links">
-          <a id="link1" href="../HTML/TheM">
+          <a id="link1" href="../HTML/TheMimic.html">
               The Mimic
           </a>
           <a id="link2" href="../HTML/WebDesign.html">
@@ -55,31 +55,30 @@
           </a>
         </div>
     </header> <!--Navigation Bar Ends Here-->
-    <h1 name="TopOfThePage"></h1><h1 name="TopOfThePage"></h1> <!--A empty header for use in the Javascript Scrolling Animation-->
     <img id="dropShadow" src="../IMG/DropShadow.png" style="width: 100%; height: 32px; z-index: 10; position: fixed; left: 0px; opacity: 0.50; top: 0px;" /> <!--Drop shadows for days-->
     <div class="container"> <!--Main Container Starts Here-->
       <div class="parallax" onscroll="onScrollJS()">
         <div class="parallax-layer parallax-layer-back">
-          <div class="Image_Gallery" style="margin-top: 0.5vw;">
+          <div class="Image_Gallery" style="margin-top: -0.5vw;">
               <!--Desktop Gallery Starts Here-->
               <div>
-                  <img src="../IMG/ArtGallery_Image1.jpg" style="width: 100vw;" />
+                  <img src="../IMG/ArtGallery_Image1.jpg" style="width: 101vw;" />
               </div>
               <div>
-                  <img src="../IMG/ArtGallery_Image2.jpg" style="width: 100vw;" />
+                  <img src="../IMG/ArtGallery_Image2.jpg" style="width: 101vw;" />
               </div>
               <div>
-                  <img src="../IMG/ArtGallery_Image3.jpg" style="width: 100vw;" />
+                  <img src="../IMG/ArtGallery_Image3.jpg" style="width: 101vw;" />
               </div>
               <div>
-                  <img src="../IMG/ArtGallery_Image4.jpg" style="width: 100vw;" />
+                  <img src="../IMG/ArtGallery_Image4.jpg" style="width: 101vw;" />
               </div>
               <div>
-                  <img src="../IMG/ArtGallery_Image5.jpg" style="width: 100vw;" />
+                  <img src="../IMG/ArtGallery_Image5.jpg" style="width: 101vw;" />
               </div>
           </div>
         </div>
-        <div class="parallax-layer parallax-layer-base">
+        <div class="parallax-layer parallax-layer-base" style="position: absolute;">
           <section>
             <div class="Silhouette_Wolf" style="margin-bottom: 60px; margin-top: 60px; width: 100vw; height: 100%; display: none;">
               <span id="Silhouette_Wolf_Title" style="color: white; font-size: 2.5rem; margin-left: 4.7%;"> Silhouette Wolf</span>
@@ -122,12 +121,11 @@
                     Proxima Centauri
                   </div>
                   <img src="../IMG/Silhouette-Wolf-Proxima-CentauriNonCard.png" alt="SystemImg" style="max-width: 23vw; display: inline-block; vertical-align: bottom;" />
-                  <div class="text tARight" style="float: right; padding-left: 0px; margin-right: 35px;">
+                  <div class="text tARight" style="float: right;">
                     Earth's Nearest neighbouring star system, it contains a barely habitable world, Proxima Centauri b. This is the Mimics home world, tidally locked, one side of the planet is always night and the other always day. A band of life exists where light meet darks around the planets edge, life here has developed unlike anything known to man. This makes it the perfect planet for Earth's first deep space research station.
                   </div>
                 </div>
-                <div id="line"></div>
-                <div class="halfBlock">
+                <div class="halfBlock" style="position: absolute; left: 50.2vw;">
                   <div class="title tARight">
                     Science Base Draco
                   </div>
@@ -150,12 +148,11 @@
                     The Mimic
                   </div>
                   <img src="../IMG/TheMimicNonCard.png" alt="SystemImg" style="max-width: 23vw; display: inline-block; vertical-align: bottom;" />
-                  <div class="text tARight" style="float: right; padding-left: 0px; margin-right: 35px;">
+                  <div class="text tARight" style="float: right;">
                     The apex predator, a perfect hunter, the Mimic gets inside its prey’s head to make them hunt themselves down. The Mimic ‘mimics’ every movement and forms a bond between itself and its prey, if the Mimic dies so does its prey. There is no way to escape its constant presence, eventually you will make a wrong turn and the Mimic will be there.
                   </div>
                 </div>
-                <div id="line"></div>
-                <div class="halfBlock">
+                <div class="halfBlock" style="position: absolute; left: 50.2vw;">
                   <div class="title tARight">
                     The Engineer
                   </div>

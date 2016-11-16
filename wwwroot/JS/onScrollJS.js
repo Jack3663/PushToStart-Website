@@ -1,7 +1,7 @@
 document.getElementsByClassName("parallax").onscroll = function() {onScrollJS()};
 
 function onScrollJS() {
-  if ($(document.getElementsByClassName("parallax")).scrollTop() > 570) {
+  if ($(document.getElementsByClassName("parallax")).scrollTop() > 470) {
     $(".mainTitle").addClass("mainTitleChanged");
   }
 

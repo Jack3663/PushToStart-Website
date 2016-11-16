@@ -20,6 +20,12 @@
   src: url(../FONTS/Raleway-Italic.ttf);
 }
 
+:root {
+  --mimic-red: #d10101;
+  --mimic-red-opacity: rgba(209, 1, 1, 0.6);
+  --mimic-blue: #03a9d9;
+}
+
 .container {
     margin: auto;
     display: block;
@@ -155,12 +161,11 @@ html {
 }
 
 body { /*General Page Stuff*/
-    margin: -25px auto;
+    margin-left: -0px;
     width: 102%;
     alignment-adjust: central;
     height: 100%;
-    /*! padding-top: 150px; */
-    background: #444444;
+    background: #333333;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -325,7 +330,7 @@ span {
     outline: none;
     background: transparent;
 
-    z-index: -2;
+    z-index: 1;
 }
 
 .slick-next /*Gallery Arrow Stuff*/
@@ -356,11 +361,10 @@ span {
     outline: none;
     background: transparent;
 
-    z-index: -3;
+    z-index: 1;
 }
 .Image_Gallery { /*Desktop Gallery Stuff*/
   margin-left: -5px;
-  padding-top: -10px;
 }
 
 .tablet-gallery { /*Tablet Gallery Stuff*/
@@ -398,6 +402,10 @@ aside {
     top: -7px;
     left: 88vw;
     height: 50px !important;
+}
+
+.socialMediaStuff {
+    display: none;
 }
 
 .Mobile_Explinations {
@@ -561,7 +569,7 @@ line-height: 2vw;
 }
 
 .halfBlock {
-  width: 50%;
+  width: 49.8%;
   display: inline-block;
   background-color: #444444;
 }
@@ -573,6 +581,8 @@ line-height: 2vw;
   margin-top: 25px;
   color: #FCFCFC;
   font-size: 1.4vw;
+  margin-right: 20px;
+  margin-left: 20px;
 }
 
 .noMaxWidth {
@@ -593,6 +603,10 @@ line-height: 2vw;
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+.imagePlaceHolder {
+  background-color: #FF69B4;
 }
 
 .horizontalLine {
@@ -641,7 +655,7 @@ line-height: 2vw;
 }
 
 .split {
-  width: 100vw;
+  width: 101vw;
   min-height: 0;
   display: flex;
   margin-left: auto;
@@ -650,9 +664,11 @@ line-height: 2vw;
 
 .parallax {
   perspective: 1px;
-  height: 101vh;
   overflow-x: hidden;
   overflow-y: auto;
+  margin-top: -4.5vw;
+  padding-bottom: 4.5vw;
+  height: 100vh;
 }
 
 .parallax-layer {
@@ -714,19 +730,21 @@ line-height: 2vw;
 #link1 {
   display: inline-block;
   position: absolute;
-  top: 10px;
-  left: calc(50vw - 153px);
+  height: 42px;
+  left: calc(85vw - 180px);
   margin-right: auto;
   margin-left: auto;
+  padding-top: 10px;
 }
 
 #link2 {
   display: inline-block;
   position: absolute;
-  top: 10px;
-  left: calc(50vw);
+  height: 42px;
+  left: calc(85vw);
   margin-right: auto;
   margin-left: auto;
+  padding-top:10px;
 }
 
 .links {
@@ -738,11 +756,25 @@ line-height: 2vw;
   padding: 0px 15px;
   color: #FCFCFC;
   text-decoration: none;
-  font-size: 1.9vw;
+  font-size: 32px;
   font-family: raleway-regular;
   font-weight: 300;
 }
 
 .links a:hover {
-  border-bottom: 3px solid #FCFCFC;
+  background-color: var(--mimic-red-opacity);
+}
+
+.homePageFront {
+  background-color: #FFFFFF;
+  height: 49vw;
+}
+
+.webDesignFront {
+  background-color: #333333;
+  height: 49vw;
+}
+
+.dispNoneDesktop {
+  display: none;
 }
